@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.setup {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #003B73;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 5px;
+    background:#60A3D9;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+
+nav ul li a:hover::after {
+    width: 100%
+}
+
+.contactnav {
+    color:#003B73;
+    background-color: #ffffff;
+    font-size:20px;
+    padding:10px; 
+    line-height: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contactnav:hover {
+    color: #60A3D9;
+
+}
+
+.logo {
+    max-width: 30vh;
+}
+
+.introduction {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.introduction h1 {
+    font-size: 50px;
+    color: #60A3D9;
+}
+
+span{
+    color: #ffffff;
+}
+
+.introduction p{
+    color: #ffffff;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.introduction a {
+    background: #bfd7ed;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0074b7;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.myimage {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.myimage img {
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.myimage:hover .backgroundshape{
+    bottom: 40px;
+}
+
+.myimage:hover .myportrait{
+    left: 45%;
+    
+}
+
+.backgroundshape {
+    height: 100%;
+}
+
+.subtitle2 {
+    color: #003B73;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/*-------------------About me---------------*/
+
+#about {
+    background-color: #ffffff;
+}
+
+.about-container{
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.about-container p{
+    color: #003B73;
+    margin-top: 10px;
+}
+
+/*-------------------Designing---------------*/
+
+#designing {
+    background-color: #bfd7ed;
+}
+
+.designing-container{
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.designing-container p{
+    color: #003B73;
+}
+
+.designing-content a {
+    color: #003B73;
+    line-height: 20px;
+}
+
+.designing-content a:hover {
+    color: #0074b7;
+}
+
+
+/*-------------------Programming---------------*/
+
+#programming {
+    background-color: #60A3D9;
+}
+
+.programming-container{
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.programming-container p {
+    color: #ffffff;
+}
+
+.programming-content a {
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.programming-content a:hover {
+    color: #0074b7;
+
+}
+
+
+/*-------------------Marketing----------------*/
+
+#marketing {
+    background-color: #0074b7;
+}
+
+.marketing-container{
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.marketing-container p{
+    color: #ffffff;
+}
+
+.dark-subtitle {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.marketing-content a {
+    color: #003B73;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #bfd7ed;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 0.2vw 2vw;
+}
+
+.marketing-content a:hover {
+    color: #003B73;
+    background-color: #60A3D9;
+    text-decoration: none;
+}
+
+/*-------------------Writing------------------*/
+
+#writing {
+    background-color: #ffffff;
+}
+
+.writing-container{
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.writing-container p{
+    color: #003B73;
+}
+
+.writing-content a {
+    color: #003B73;
+    line-height: 20px;
+}
+
+.writing-content a:hover {
+    color: #0074b7;
+    text-decoration: none;
+}
+
+/*-------------------Contact------------------*/
+#contact {
+    background-color: #bfd7ed;
+}
+
+.contact-container{
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.subtitle {
+    color: #003B73;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact-form {
+    flex-basis: 35%;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    color: #0074b7;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn.btn2 {
+    display:inline-block;
+    background-color: #003B73;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 2vh 8vw;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn.btn2:hover {
+    background-color: #0074b7;
+    color: #ffffff;
+}
+
+
+/*------------------css for smaller screens----------------*/
+
+@media only screen and (max-width:1000px){
+    .landing {
+        position: relative;
+    }
+}
+
+#submit {
+    color: #003B73;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
